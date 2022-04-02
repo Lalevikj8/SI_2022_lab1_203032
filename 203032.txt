@@ -1,0 +1,34 @@
+git init - иницијализираме репозиториум
+git remote add origin
+git remote -v
+4.git clone https://github.com/Lalevikj8/SI_2022_lab1_203032.git//го клонираме репозиториумот од github на нашиот локален pc
+ cd SI_2022_lab1_203032
+ 5. git add shopping_list.txt
+   git commit -m "Add 5 items to the shopping list" //додаваме шопинг листа и правиме комит на листата 
+ git config --global user.email "hristina.lalevikj@students.finki.ukim.mk"//ми побара идентификација
+git config --global user.name "Lalevikj8"
+ git commit
+ 6. git commit -m "Add quantities to the items"//со комит правиме измени во листата и додаваме количини
+ git log
+ 7. git checkout -b branch1
+    git checkout -b branch2// додаваме две нови гранки на мастер
+ 8. git log// ги “прикачуваме“ досегашните измени
+9.git push --all//синхронизирање на сите претходни гранки 
+ 10.git checkout branch1//се префрламе на гранката 1
+11.git commit -m "Change quantity of item #5"// со гит комит правиме измена во документот
+ 12.git checkout master//се враќаме на гранката мастер
+ 13.git commit -m "Change quantity of item #2"//со гит комит ја менуваме количината на ставка 2
+ 14.git push --all//повторна синхронизација
+14.git checkout branch2//се префрламе на гранка 2
+ 15.git commit -m "Modify item #4"//повторно со итатат наредба го внесуваме променетатат ставка
+16.git log
+ 17.git commit --amend -m "Modify item #4 and add item #6"// со новата наредба аменд ги спојуваме модифај и ад ајтем
+18.git log
+19 .git checkout master
+   git merge branch1
+20. git merge branch2 //konflikt јавува конфликт бидејќи во текстуалниот документ уште еднаш ни се копира листата нови измени и ==== >>>head од кога ќе го промениме тоа во текстуалниот документ и ќе ја сочуваме повторно ќе се реши проблемот
+ git commit -a -m "Resolved"
+git log
+
+
+
